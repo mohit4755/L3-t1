@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Gallery and Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stunning Image Gallery</h1>
+        <div class="gallery">
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1001/300/300" alt="Mountain Lake" data-full="https://picsum.photos/id/1001/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1002/300/300" alt="Misty Forest" data-full="https://picsum.photos/id/1002/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1003/300/300" alt="Cloudy Mountains" data-full="https://picsum.photos/id/1003/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1004/300/300" alt="Foggy Hills" data-full="https://picsum.photos/id/1004/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1005/300/300" alt="Bear in Water" data-full="https://picsum.photos/id/1005/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1006/300/300" alt="Waterfall" data-full="https://picsum.photos/id/1006/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1008/300/300" alt="Snowy Mountains" data-full="https://picsum.photos/id/1008/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1009/300/300" alt="Desert Landscape" data-full="https://picsum.photos/id/1009/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1010/300/300" alt="Coastal Cliffs" data-full="https://picsum.photos/id/1010/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1011/300/300" alt="Lighthouse" data-full="https://picsum.photos/id/1011/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1012/300/300" alt="Mountain Stream" data-full="https://picsum.photos/id/1012/800/600">
+            </div>
+            <div class="thumbnail">
+                <img src="https://picsum.photos/id/1013/300/300" alt="Autumn Forest" data-full="https://picsum.photos/id/1013/800/600">
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="/placeholder.svg" alt="Enlarged Image">
+            <div class="caption"></div>
+        </div>
+
+        <h1>Dynamic Image Slideshow</h1>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://picsum.photos/id/1001/800/500" alt="Mountain Lake">
+                <div class="caption">Serene Mountain Lake</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://picsum.photos/id/1002/800/500" alt="Misty Forest">
+                <div class="caption">Enchanting Misty Forest</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://picsum.photos/id/1003/800/500" alt="Cloudy Mountains">
+                <div class="caption">Majestic Cloudy Mountains</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://picsum.photos/id/1004/800/500" alt="Foggy Hills">
+                <div class="caption">Mysterious Foggy Hills</div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
