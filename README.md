@@ -19,7 +19,7 @@ This project is part of the Level 3 Task 1 for the Cognifyz internship. It featu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cognifyz-task1.git
+   git clone https:https://github.com/mohit4755/L3-t1
 
 2. Navigate to the project directory:
 cd cognifyz-task1
